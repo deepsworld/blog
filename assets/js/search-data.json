@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Title",
             "content": "import numpy as np &#39;&#39;&#39; 3x - y = 7 2x + y = 8 - 5x = 15 x = 3; y = 2 &#39;&#39;&#39; mat = np.array([[3, -1], [2, 1]]) # 2 x 2 rhs = np.array([[7, 8]]) # 1 x 2 out = np.linalg.inv(mat) @ rhs.transpose() # (2 x 2) @ (1 x 2).T out . array([[3.], [2.]]) . I = np.eye(3, 3) I . array([[1., 0., 0.], [0., 1., 0.], [0., 0., 1.]]) . &#39;&#39;&#39; Ainv @ A = I &#39;&#39;&#39; mat = np.random.rand(2, 2) I = np.linalg.inv(mat) @ mat I . array([[1.00000000e+00, 3.32227679e-16], [3.47665962e-18, 1.00000000e+00]]) . NOTE: The output matrix does not look exactly what we expect, this is because of the limitation of floating point precision and for practical purposes e-16 can be considered as zero or very close to zero . singular = np.array([[1, 0], [0, 0]]) singular . array([[1, 0], [0, 0]]) . try: np.linalg.inv(singular) except Exception as e: print(f&#39;Cannot find inverse because: {e}&#39;) . Cannot find inverse because: Singular matrix . det_singular = np.linalg.det(singular) det_singular . 0.0 .",
-            "url": "https://deepsworld.github.io/blog/2022/08/06/Matrices-Notes.html",
-            "relUrl": "/2022/08/06/Matrices-Notes.html",
+            "url": "https://deepsworld.github.io/blog/2022/08/06/Matrices.html",
+            "relUrl": "/2022/08/06/Matrices.html",
             "date": " • Aug 6, 2022"
         }
         
