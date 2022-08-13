@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://deepsworld.github.io/blog/linear_algebra/2022/08/06/Linear-Dependence-&amp;-Span.html</loc>
+<lastmod>2022-08-06T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://deepsworld.github.io/blog/linear_algebra/2022/08/06/Matrices-Notes.html</loc>
+<lastmod>2022-08-06T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://deepsworld.github.io/blog/2022/08/06/Norms.html</loc>
 <lastmod>2022-08-06T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://deepsworld.github.io/blog/probability/2022/08/06/Probability-Notes.html</loc>
 <lastmod>2022-08-06T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://deepsworld.github.io/blog/linear_algebra/2022/09/14/Linear-Transformation.html</loc>
+<lastmod>2022-09-14T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://deepsworld.github.io/blog/</loc>
