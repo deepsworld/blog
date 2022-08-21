@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -127,6 +127,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Adding-2-vectors:-linear-combination-or-weighted-sum">Adding 2 vectors: linear combination or weighted sum </a></li>
+<li class="toc-entry toc-h3"><a href="#Linear-dependence">Linear dependence </a></li>
 <li class="toc-entry toc-h3"><a href="#Span">Span </a></li>
 </ul><!--
 #################################################
@@ -349,6 +350,39 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Linear-dependence">
+<a class="anchor" href="#Linear-dependence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linear dependence<a class="anchor-link" href="#Linear-dependence"> </a>
+</h3>
+<p>From: <a href="https://math.stackexchange.com/a/2780506/1086132">https://math.stackexchange.com/a/2780506/1086132</a></p>
+<p>Here's my intuition: Think of vectors as the axes that we use to define a two-dimensional, three-dimensional, or $n$-dimensional space. <strong>A set of vectors is linearly dependent when one of the vectors isn't necessary — it doesn't add anything useful to our coordinate system.</strong>  This happens when one vector is just a linear combination of other vectors in the set.</p>
+<p>As an example, consider these three vectors in two-dimensional space:</p>
+<p>$\vec w = \begin{bmatrix}2 \\3 \end{bmatrix}$,
+$\vec x = \begin{bmatrix}1 \\0 \end{bmatrix}$,
+$\vec y = \begin{bmatrix}0 \\1 \end{bmatrix}$</p>
+<p>In this case, we can express $\vec w$ as a linear combination of the other two vectors, $\vec w = 2 \vec x + 3 \vec y$:</p>
+<p>$\begin{bmatrix}2 \\3 \end{bmatrix} = 2\cdot \begin{bmatrix}1 \\0 \end{bmatrix} + 3\cdot \begin{bmatrix}0 \\1 \end{bmatrix}$</p>
+<p>Equivalently, we can rewrite this as $2\vec x + 3 \vec y - 1\vec w = 0$:</p>
+<p>$2\cdot \begin{bmatrix}1 \\0 \end{bmatrix} + 3\cdot \begin{bmatrix}0 \\1 \end{bmatrix} - 1 \begin{bmatrix}2 \\3 \end{bmatrix} = \begin{bmatrix}0 \\0 \end{bmatrix}$</p>
+<p>Intuitively, this is what is meant by the proof.  When these factors hold, it means that at least one vector is essentially "redundant" and unnecessary — it's just a combination of the other vectors.</p>
+<p>More generally, assume you have a set of vectors with this property:</p>
+<p>$a_1 \vec v_1 + a_2  \vec v_2 + ... + a_n \vec v_n = 0 $</p>
+<p>This can be written as:</p>
+<p>$-a_1 \vec v_1 = a_2  \vec v_2 + ... + a_n  \vec v_n$</p>
+<p>Which means that $v_1$ can be expressed as simply a linear combination of the other vectors:</p>
+<p>$v_1 = a_2' v_2 + ... + a_n'v_n$</p>
+<p>When you have a set of vectors like this, it means that you have multiple ways to express the same point using your coordinate system.  For example, with the vectors above, a point could be identified in the standard <em>x/y</em> coordinate system as (8, 15).  But the same point could also be expressed as (4, 3) in <em>w/y</em> coordinates or as (5, -2) in <em>w/x</em> coordinates:</p>
+<p>$8\vec x + 15 \vec y = 8\begin{bmatrix}1 \\0 \end{bmatrix} + 15 \begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}8 \\15 \end{bmatrix}$</p>
+<p>$4\vec w + 3 \vec y = 4\begin{bmatrix}2 \\3 \end{bmatrix} + 3\begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}8 \\15 \end{bmatrix}$</p>
+<p>$5\vec w -2 \vec x = 5\begin{bmatrix}2 \\3 \end{bmatrix} -2\begin{bmatrix}1 \\0 \end{bmatrix} = \begin{bmatrix}8 \\15 \end{bmatrix}$</p>
+<p>We'd normally rather have a minimal set of vectors so that there's only one way to represent each point.  It keeps the math simpler.  This is similar to a system of equations in which you have three equations for two unknowns.  In the above, since we have $\vec w = 2 \vec x + 3 \vec y$, we can always substitute $\vec x$ and $\vec y$ for $\vec w$.</p>
+<p>Note that there's no "correct" coordinate system -- any set of two vectors here, $\{\vec x, \vec y\}$, $\{\vec w, \vec y\}$, or $\{\vec w, \vec x\}$, would provide a valid basis for a two-dimensional coordinate system.  But there's no need to have three vectors here to represent a point in two-dimensional space.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
