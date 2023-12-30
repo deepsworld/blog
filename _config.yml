@@ -38,19 +38,21 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-
+  social_links:
+    twitter: deepsworld1604
+    github: deepsworld
   # social_links:
   #   - { platform: github,  user_url: "https://github.com/deepsworld" }
   #   - { platform: twitter, user_url: "https://twitter.com/deepsworld1604" }
 
 # Set this to true to get LaTeX math equation support
-use_math: 
+use_math: true
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
+show_image: true
 
 # Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
 annotations: false
@@ -102,7 +104,7 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@0ac17f8d08248ae81edfc5c647cbbd5f7086aa34
 
 titles_from_headings:
   enabled:     true
