@@ -41,7 +41,7 @@ jobs:
     - name: Jekyll build
       uses: docker://fastai/fastpages-jekyll
       with:
-        args: bash -c ""gem update --system && jekyll build -V --strict_front_matter --trace""
+        args: bash -c "gem update --system && jekyll build -V --strict_front_matter --trace"
       env:
         JEKYLL_ENV: 'production'
         
